@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sed -i -e "s/\${exec_prefix}\/lib\/lib/-l/g"  -e "s/\.so//g" ${3}/usr/lib64/pkgconfig/opencv.pc
+sed -i -e "s/\${exec_prefix}\/lib\/lib/-l/g"  -e "s/\.so//g" ${3}/usr/${B_LIBDIRS}/pkgconfig/opencv.pc
