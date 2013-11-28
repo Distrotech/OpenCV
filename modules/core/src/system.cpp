@@ -100,7 +100,9 @@
 #if defined ANDROID
 #include <sys/sysconf.h>
 #else
+#ifndef __ILP32__
 #include <sys/sysctl.h>
+#endif
 #endif
 #endif
 
