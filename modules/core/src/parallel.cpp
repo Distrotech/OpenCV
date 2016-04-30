@@ -56,7 +56,7 @@
     #include <sys/types.h>
     #if defined ANDROID
         #include <sys/sysconf.h>
-    #else
+    #elif !defined(__ILP32__)
         #include <sys/sysctl.h>
     #endif
 #endif
